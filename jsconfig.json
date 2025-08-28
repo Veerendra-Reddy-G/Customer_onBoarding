@@ -1,7 +1,23 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   }
+// }
+
+
+ 
+
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/context/*": ["src/app/context/*"]
     }
-  }
+  },
+  "include": ["src/**/*", "next-env.d.ts", "**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules", ".next"]
 }
